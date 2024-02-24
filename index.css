@@ -1,126 +1,8 @@
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+@font-face {
+  font-family: deyihei;
+  src: url('./fonts/SmileySans-Oblique.ttf.woff2');
 }
-html {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-caption,
-td,
-th {
-  text-align: left;
-  font-weight: 400;
-  vertical-align: middle;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-  content: '';
-  content: none;
-}
-a img {
-  border: none;
-}
-/* elements-of-type(html5-block) {
-  display: block;
-} */
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -128,22 +10,23 @@ a img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   color: #3f3f3f;
   font-size: 24px;
-  line-height: 1.5;
-  font-family: Helvetica Neue, Helvetica, Arial, Microsoft YaHei, sans-serif;
+  font-family: deyihei, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-  overflow: auto;
 }
+
 a {
   text-decoration: none;
   color: #12b0e0;
-  /* -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; */
 }
+
 .last-modified {
   position: absolute;
   top: 30px;
@@ -179,13 +62,18 @@ a {
 }
 .content-hd .title {
   width: 100%;
-  border-bottom: 2px solid #04799c;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   font-size: 44px;
   font-weight: 400;
   overflow: hidden;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
+
+.content-hd ul {
+  list-style: none;
+}
+
 .content-hd .contact,
 .content-hd .info,
 .content-hd .job,
@@ -196,8 +84,6 @@ a {
   float: left;
 }
 .content-hd .name h1 {
-  font-family: Lucida Grande, Hiragino Sans GB, Hiragino Sans GB W3, Helvetica Neue, Helvetica, Arial, Microsoft YaHei,
-    sans-serif;
   font-weight: 500;
   letter-spacing: 5px;
 }
@@ -231,8 +117,6 @@ a {
 }
 .content-hd .contact ul > li > a {
   color: #fff;
-  font-family: Lucida Grande, Hiragino Sans GB, Hiragino Sans GB W3, Helvetica Neue, Helvetica, Arial, Microsoft YaHei,
-    sans-serif;
 }
 .content-hd .contact ul > li > a:hover {
   color: #e8e8e8;
@@ -248,16 +132,14 @@ a {
   overflow: hidden;
 }
 
-.content-bd .content-left,
-.content-bd .content-right {
-  width: 48%;
+.content-bd ul {
+  font-family: Helvetica Neue, Helvetica, Arial, Microsoft YaHei, sans-serif;
 }
-.content-bd .content-left {
-  float: left;
+
+.content-block{
+  
 }
-.content-bd .content-right {
-  float: right;
-}
+
 .content-bd section {
   overflow: hidden;
 }
@@ -349,29 +231,7 @@ a {
   word-break: break-all;
   line-height: 42px;
 }
-.content-bd .section-content em {
-  display: inline-block;
-  font-family: Menlo, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  border: 1px solid #d1d1d1;
-  border-radius: 3px;
-  margin: 2px;
-  padding: 0 3px;
-  background-color: #f7f7f7;
-}
-.content-bd .section-content strong {
-  font-family: Helvetica Neue, Helvetica, Arial, Microsoft YaHei, sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  border: 1px solid #f3f3f3;
-  border-radius: 3px;
-  font-weight: 500;
-  color: #444;
-  margin: 2px;
-  padding: 0 3px;
-  background-color: #f6f6f6;
-}
+
 .content-bd .practice .item-time {
   width: 100%;
 }
@@ -381,7 +241,6 @@ a {
   border: 1px solid #81bcce;
   border-radius: 5px;
   color: #0083ab;
-  font-family: Menlo, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, sans-serif;
   font-size: 20px;
   line-height: 18px;
   text-align: center;
@@ -408,11 +267,7 @@ a {
   width: 50%;
   padding: 0 15px;
 }
-/* 
-li {
-  font-size: 16px;
-  line-height: 25px;
-} */
+
 .content-hd li {
   font-size: 23px;
   line-height: 33px;

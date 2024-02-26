@@ -23,17 +23,18 @@ defineProps({
   span {
     width: fit-content;
     min-width: 50px;
-    padding: 0.3em 2em;
+    padding: 0.3em 0.2em;
     margin: 0 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     letter-spacing: 2px;
     font-family: deyihei;
     font-weight: 700;
+    line-height: 1.5;
   }
 
   &::before,

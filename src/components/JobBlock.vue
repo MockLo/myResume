@@ -46,7 +46,6 @@ const details = computed(() => props.data.details || []);
     letter-spacing: 1px;
     font-size: 20px;
     color: #222;
-    padding: 0 6px;
 
     &-right {
       display: flex;
@@ -73,29 +72,29 @@ const details = computed(() => props.data.details || []);
     display: flex;
     flex-direction: column;
     gap: 1em;
+    padding-left: 20px;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      background: rgba(0, 0, 0, 0.15);
+      top: 20px;
+      left: 5px;
+      bottom: 10px;
+    }
   }
 }
 
 .job-detail {
-  padding: 1em;
-  background: rgba(#76bbd0, 0.2);
-  border-radius: 6px;
+  margin-top: 1em;
 
   &-name {
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 700;
-    color: #167793;
-  }
-
-  &-list {
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0.4px;
-
-    li {
-      margin-top: 0.5em;
-    }
   }
 }
 </style>

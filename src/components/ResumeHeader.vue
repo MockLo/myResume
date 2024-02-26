@@ -14,17 +14,16 @@ const { personData } = useResume();
 <style lang="scss" scoped>
 .resume-header {
   margin: 0 2em;
-  padding: 2em 0;
+  padding: 4em 16px 6px;
   font-family: deyihei;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding-bottom: 4px;
   border-bottom: 3px solid;
 
   h1 {
     margin: 0;
-    font-size: 46px;
+    font-size: 40px;
     letter-spacing: 4px;
     font-weight: normal;
   }

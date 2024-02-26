@@ -23,14 +23,14 @@ export const useResume = createGlobalState(() => {
     {
       companyData: {
         name: '米哈游',
-        department: '平台-hoyolab',
+        department: '平台-HoYoLAB',
         position: '上海',
         timeStart: '2021.12',
         timeEnd: '至今',
       },
       details: [
         {
-          job: 'hoyolab 海外社区-游戏战绩工具',
+          job: 'HoYoLAB 海外社区-游戏战绩工具',
           list: [
             '负责海外社区游戏战绩的前端研发工作，承接「原神」、「崩坏·星穹铁道」、「崩坏 3」等游戏的游戏数据查询， PC&M 双端页面，包含用户等级、成就、解锁等信息的查询，也包含深渊等肉鸽类型游戏的数据查询 和 每个版本的特定活动的页面展示和数据查询。',
             '提供基于 html2canvas 的游戏数据截图分享，提供多渠道、多类型分享，方便用户进行社群传播，加大用户吸引力和页面渗透，也对游戏品牌有正向影响。',
@@ -39,7 +39,7 @@ export const useResume = createGlobalState(() => {
           ],
         },
         {
-          job: 'hoyolab 海外社区-HoYoWiki',
+          job: 'HoYoLAB 海外社区-HoYoWiki',
           list: [
             '负责海外社区的百科产品「HoYoWiki」的前端研发工作，从 0 到 1 开始， PC&M 双端页面，承接「原神」和「崩坏·星穹铁道」等游戏的全品百科数据的编写和查询功能，包含 PGC 和 UGC 双侧内容消费，既可以保证游戏信息的全面性和专业度，也可以提供给玩家一定的自由度，传播队伍搭配、武器搭配、活动攻略等信息。',
             '完整提供从「生产侧」的编辑词条，到「审核侧」的审核、打分、奖励，再到「消费侧」的展示、交互的通用能力，大幅提升游戏信息的生产能力，提升海外社区的官方可靠度、信任力和影响力。',

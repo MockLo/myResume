@@ -38,8 +38,6 @@ const details = computed(() => props.data.details || []);
 
 <style lang="scss" scoped>
 .job-block {
-  margin-top: 1em;
-
   &-header {
     display: flex;
     align-items: center;
@@ -75,7 +73,6 @@ const details = computed(() => props.data.details || []);
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 1em 0;
   }
 }
 

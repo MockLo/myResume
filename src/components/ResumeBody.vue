@@ -1,9 +1,10 @@
 <template>
   <div class="resume-body">
-    <div class="resume-jobs">
-      <BlockHeader name="工作经历" />
-      <JobBlock v-for="(item, i) in jobList" :key="i" :data="item" />
-    </div>
+    <PersonData />
+
+    <EducationData />
+
+    <JobData />
 
     <div class="resume-skills">
       <BlockHeader name="专业技能" />
@@ -19,9 +20,12 @@
 <script setup>
 import BlockHeader from './BlockHeader.vue';
 import JobBlock from './JobBlock.vue';
+import PersonData from './content/PersonData.vue';
+import EducationData from './content/EducationData.vue';
+import JobData from './content/JobData.vue';
 import { useResume } from '../useResume';
 
-const { jobList, skillList } = useResume();
+const { skillList } = useResume();
 </script>
 
 <style lang="scss" scoped>
@@ -29,7 +33,7 @@ const { jobList, skillList } = useResume();
   padding: 1em 2em 4em;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 3em;
 
   ::v-deep {
     ul {

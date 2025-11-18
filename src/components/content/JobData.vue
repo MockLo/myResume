@@ -19,7 +19,7 @@ const { jobList } = useResume();
   &-details {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 48px;
   }
 }
 </style>

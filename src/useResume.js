@@ -3,7 +3,7 @@ import { createGlobalState } from '@vueuse/core';
 export const useResume = createGlobalState(() => {
   const personData = {
     name: '吴晓航',
-    job: '前端开发',
+    job: '前端研发工程师',
     birth: '1995-07',
     gender: '男',
     email: 'wu534152798@163.com',
@@ -22,11 +22,30 @@ export const useResume = createGlobalState(() => {
   const jobList = [
     {
       companyData: {
+        name: 'Cyber',
+        department: 'Link3',
+        position: '上海',
+        timeStart: '2024.04',
+        timeEnd: '至今',
+      },
+      details: [
+        {
+          job: '前端研发',
+          list: [
+            'Link3 是一款面向 Web3 KOL 与机构用户的社交产品，用户可以将个人影响力通过 Paid DM 进行变现。',
+            '完成 Paid Message 功能的前端研发，涵盖常见的对话聊天的基本功能，包括发送、接收、删除、撤回、reaction 等，并在此基础上实现了付费功能，在聊天界面用户可展示自己的名片包含付费信息等，如果要主动 DM 对方，则需先支付此费用即可在后续免费 DM。',
+            '完成 Link3 相关的活动页面的前端研发，包括活动报名、活动详情等页面。',
+          ],
+        },
+      ],
+    },
+    {
+      companyData: {
         name: '米哈游',
         department: '平台-HoYoLAB',
         position: '上海',
         timeStart: '2021.12',
-        timeEnd: '至今',
+        timeEnd: '2024.03',
       },
       details: [
         {
@@ -91,10 +110,10 @@ export const useResume = createGlobalState(() => {
   ];
 
   const skillList = [
-    '熟练掌握 HTML + CSS + JS 开发项目，熟练使用 Vue 相关技术栈，能快速把握需求要点，代码遵守编码规范。',
-    '熟悉盒模型和视觉格式化模型、熟悉浏览器渲染原理，熟悉计算机网络基础。能快速定位问题，提升开发效率。',
-    '熟练掌握移动端开发方式，以及移动端相关的开发调试技巧，有 PC&M 双端开发经验。',
-    '熟悉业务项目管理流程，能结合实际业务进行页面性能优化，提高产品性能和用户体验。有产品 owner 意识，在技术之外从用户角度反推优化点。',
+    '精通 Vue/React 等框架，主导过大型项目架构设计，注重代码质量与规范。',
+    '具备从浏览器原理到网络协议的完整的性能优化闭环能力。',
+    '丰富的 Hybrid 开发经验，善用工程化与工具链提效。',
+    '拥有强产品 Owner 意识，可以从技术手段或业务层面主动提升产品体验。',
   ];
 
   return { educationData, personData, jobList, skillList };

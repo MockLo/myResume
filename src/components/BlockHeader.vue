@@ -35,15 +35,7 @@ defineProps({
     font-family: deyihei;
     font-weight: 700;
     line-height: 1.5;
-  }
-
-  &::before,
-  &::after {
-    content: '';
-    display: block;
-    height: 1px;
-    flex-grow: 1;
-    background-color: #000;
+    background-color: #fff;
   }
 }
 </style>

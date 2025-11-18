@@ -19,12 +19,13 @@ const { personData } = useResume();
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border-bottom: 3px solid;
+  border-bottom: 3px solid #333;
 
   h1 {
     margin: 0;
     font-size: 40px;
     letter-spacing: 4px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
     font-weight: normal;
   }
 
@@ -68,5 +69,6 @@ const { personData } = useResume();
 
 .resume-job {
   font-size: 24px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 </style>

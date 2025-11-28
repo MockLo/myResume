@@ -5,8 +5,8 @@
 
       <div class="job-block-header-right">
         <span>{{ companyData.name }}</span>
-        <span>{{ companyData.department }}</span>
-        <span>{{ companyData.position }}</span>
+        <span v-if="companyData.department">{{ companyData.department }}</span>
+        <span v-if="companyData.position">{{ companyData.position }}</span>
       </div>
     </div>
 
